@@ -1,0 +1,103 @@
+.skills-section {
+  border-top: 1.5px solid var(--border-subtle);
+  margin-top: 10px;
+}
+
+/* .filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.filter-tab {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-color);
+  padding: 0.45rem 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab.active, .filter-tab:hover {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+} */
+
+
+/* total skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+
+/* skill card designs */
+.skill-card {
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+/* hover when cursor is over them */
+.skill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* skill cards sub heading and serial number */
+.skill-card-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+/* sub heading styling */
+.skill-cat-tag {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* heading of skills like Backend Database */
+.skill-cat-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
+
+/* all skills inside a card */
+.skill-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+/* individual styling of each skill */
+.skill-name {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.75rem;
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.skill-name:hover {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+@media (max-width: 768px) 
+{
+  .skills-grid 
+  {
+    grid-template-columns: 1fr;
+  }
+}

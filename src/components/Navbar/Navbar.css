@@ -1,0 +1,223 @@
+.navbar 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all 0.25s ease;
+  padding: 1.25rem 0;
+}
+
+/* when scrolled there will be a bg and border for navbar */
+.navbar.scrolled 
+{
+  background-color: var(--bg-primary);
+  border-bottom: 1.5px solid var(--border-color);
+  padding: 0.85rem 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+} 
+
+/* hamburger and sadat */
+.nav-inner 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* sadat */
+.nav-brand {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* darkmode and burger icon */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.theme-toggle-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-color);
+  padding: 0.5rem 0.85rem;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.hamburger-btn {
+  background: transparent;
+  border: 1.5px solid var(--border-color);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hamburger-btn:hover {
+  background: var(--btn-primary-bg);
+}
+
+/* when clicked transitioned */
+.hBar {
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: all 0.25s ease;
+}
+
+.hamburger-btn:hover .hBar {
+  background-color: var(--btn-primary-text);
+}
+
+.hamburger-btn.active .bar1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-btn.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger-btn.active .bar3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* the filter when burger drawer is open */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 1050;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* filter opacity */
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* settings of the burger drawer */
+.hamburger-drawer {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 340px;
+  max-width: 85vw;
+  height: 80vh;
+  background-color: var(--bg-primary);
+  border-left: 2px solid var(--border-color);
+  border-bottom: 2px solid white;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  transition: right 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* drawer opening settings, without it drawer won't open */
+.hamburger-drawer.open {
+  right: 0;
+}
+
+/* INDEX AND THE X */
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+}
+
+/* CLOSING THE DRAWER BY X */
+.drawer-close {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* infos inside the drawer*/
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+/* text design of the drawer buttons like intro, about ,skills etc*/
+.drawer-nav a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 1.45rem;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.drawer-nav a:hover {
+  transform: translateX(8px);
+}
+
+/* numbering of the list inside navbar */
+.nav-num {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* .drawer-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.5rem;
+}
+
+.drawer-hire-btn {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: 2px solid var(--border-color);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.drawer-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+} */

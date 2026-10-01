@@ -1,0 +1,163 @@
+.edu-sec {
+  margin-top: 10px;
+  border-top: 1.5px solid var(--border-subtle);
+}
+
+.section-header {
+  margin-top: 5px;
+}
+/* the gap */
+.section-header .section-tag{
+  /* display: block; */
+  margin-top: 10px;
+  
+}
+.section-header .section-title{
+  /* display: block; */
+  padding-top:;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+/* total class of edu card */
+.edu-time {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* THE DEFAULT EDUCATION CARDS */
+.edu-card {
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-color);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+/* EDU CARDS float when clicked */
+.edu-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-box);
+}
+
+/* the highlight which institute i am in rn */
+.edu-card.running {
+  border-left: 6px solid var(--border-color);
+}
+
+/* degreee name */
+.edu-level {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* degree time line */
+.edu-period {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* institution name */
+.edu-inst {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+/* dergee name */
+.edu-degree {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* current term */
+.edu-term {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+/* current status */
+.edu-stat 
+{
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border: 1.5px solid var(--border-color);
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.edu-stat.highlight {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+/* for ssc and hsc */
+.edu-stat.two {
+  /* background-color: var(--bg-primary); */
+  color: var(--text-primary);
+}
+/* for nstu part, dropped out */
+.edu-stat.discontinued {
+  border-style: dashed;
+  font-size: 1rem;
+  padding: 4px;
+  color: var(--text-muted);
+}
+
+/* responsivness for education here */
+@media (max-width: 860px) {
+  .edu-card {
+    grid-template-columns: 180px 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .edu-stat {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+/* for phone */
+@media (max-width: 600px) {
+  .edu-time {
+    gap: 1.25rem;
+  }
+
+  .edu-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .edu-stat {
+    grid-column: auto;
+    justify-self: start;
+  }
+
+  .edu-level {
+    font-size: 1.2rem;
+  }
+
+  .edu-inst {
+    font-size: 1.05rem;
+  }
+
+  .edu-degree {
+    font-size: 0.85rem;
+  }
+
+  .edu-note {
+    font-size: 0.75rem;
+  }
+}

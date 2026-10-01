@@ -1,0 +1,113 @@
+.about-section {
+  border-top: 1.5px solid var(--border-subtle);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* the gap between about me and Background */
+.section-header .section-tag{
+  /* display: block; */
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+/* the paragraph after about me */
+.about-story {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  font-size: 1.05rem;
+  /* colour of short story */
+  color: var(--text-secondary);
+}
+
+/* short paragraph */
+.about-subtitle {
+  /* margin-top: 4px; */
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+/* core coursework part */
+.curriculum-box {
+  /* the left white line here */
+  border-left: 2px solid var(--border-color);
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* core coursework title*/
+.curriculum-head {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* course list */
+.curriculum-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+
+/* part on the right side of about */
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* information card of about */
+.info-card {
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-color);
+  padding: 1.6rem;
+  transition: all 0.2s ease;
+}
+
+/* info cards float when clicked */
+.info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* title of cards */
+.card-title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+.info-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0.35rem 0;
+}
+
+.info-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

@@ -1,0 +1,152 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 8rem 0 4.5rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 980px;
+}
+
+/* .status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-card);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+} */
+
+/* .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
+} */
+
+/* .hero-tag {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+} */
+
+/* hi i am ssadat */
+.hero-title {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+/* uunderline of sadat */
+.uline {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 8px;
+}
+
+/* small paragraph inside hero */
+.hero-description {
+  font-size: 20px;
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+}
+
+/* the 3 buttons after the paragraph */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-bottom: 3.5rem;
+}
+
+/* button design */
+.btn {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0.85rem 1.6rem;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+/* hire me button */
+
+.btn-primary {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  border: 2px solid var(--border-color) !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Explicit black text on outline buttons in Light Mode */
+.btn-outline {
+  background-color: var(--btn-outline-bg) !important;
+  color: var(--btn-outline-text) !important;
+  border: 2px solid var(--btn-outline-border) !important;
+}
+
+.btn-outline:hover {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+
+/* the infos inside 4 informations */
+.hero-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  border-top: 1.5px solid var(--border-subtle);
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-num {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+.info-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.info-divider {
+  width: 1px;
+  height: 38px;
+  background-color: var(--border-subtle);
+}

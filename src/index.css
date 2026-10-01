@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* LIGHT THEME (Crisp Black on White) */
+  --bg-primary: #ffffff;
+  --bg-card: #fafafa;
+  --bg-subtle: #f4f4f5;
+  --border-color: #000000;
+  --border-subtle: #e4e4e7;
+  
+  --text-primary: #000000;
+  --text-secondary: #3f3f46;
+  --text-muted: #71717a;
+
+  --btn-primary-bg: #000000;
+  --btn-primary-text: #ffffff;
+  --btn-outline-bg: #ffffff;
+  --btn-outline-text: #000000;
+  --btn-outline-border: #000000;
+
+  --dot-color: rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 4px 4px 0px #000000;
+}
+
+[data-theme='dark'] {
+  /* DARK THEME (Pure Obsidian & High-Contrast White) */
+  --bg-primary: #09090b;
+  --bg-card: #121215;
+  --bg-subtle: #18181b;
+  --border-color: #ffffff;
+  --border-subtle: rgb(216, 213, 213);
+
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  --btn-primary-bg: #ffffff;
+  --btn-primary-text: #000000;
+  --btn-outline-bg: #121215;
+  --btn-outline-text: #ffffff;
+  --btn-outline-border: #ffffff;
+
+  --dot-color: rgba(255, 255, 255, 0.12);
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.4);
+  --shadow-md: 4px 4px 0px #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  background-image: radial-gradient(var(--dot-color) 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
+  background-attachment: fixed;
+  transition: background-color 0.22s ease, color 0.22s ease;
+  overflow-x: hidden;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

@@ -1,0 +1,142 @@
+.projects-section {
+  margin-top: 10px;
+  border-top: 1.5px solid var(--border-subtle);
+}
+
+/* all projects section */
+.projects-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* individual project cards */
+.project-card 
+{
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-color);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+/* card hovers here */
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* top part of project, serial and type */
+.project-top 
+{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* type of project like system,python etc*/
+.project-cat 
+{
+  border: 1px solid var(--border-color);
+  padding: 0.15rem 0.5rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+/* name of project */
+.project-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+/* project description */
+.project-about 
+{
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* projects info boxes under description */
+.project-tags 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+/* styling of tags */
+.tag-design 
+{
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+
+/* the code and preview buttons */
+.proj-action 
+{
+  display: flex;
+  gap: 0.85rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.25rem;
+}
+
+/* button of preview and code */
+.proj-btn {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.65rem 1.1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+/* preview button */
+.proj-btn-fill {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  border: 1.5px solid var(--border-color) !important;
+}
+
+/* source code button */
+.proj-btn-border
+{
+  background-color: var(--btn-outline-bg) !important;
+  color: var(--btn-outline-text) !important;
+  border: 1.5px solid var(--btn-outline-border) !important;
+}
+
+
+.proj-btn-border:hover 
+{
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  transform: scale(1.05);
+}
+.proj-btn-fill:hover 
+{
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
