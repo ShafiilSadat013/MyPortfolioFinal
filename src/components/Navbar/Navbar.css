@@ -131,7 +131,7 @@
   right: -360px;
   width: 340px;
   max-width: 85vw;
-  height: 80vh;
+  height: 100vh;
   background-color: var(--bg-primary);
   border-left: 2px solid var(--border-color);
   border-bottom: 2px solid white;
