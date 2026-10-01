@@ -1,0 +1,83 @@
+
+
+.github-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.github-description {
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+/* Calendar */
+
+.github-calendar-wrapper {
+  width: 100%;
+  margin-top: 45px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+
+  overflow-x: auto;
+}
+
+/* Make calendar stay inside container */
+
+.github-calendar-wrapper > div {
+  min-width: 700px;
+}
+
+/* GitHub link */
+
+.github-link-wrapper {
+  margin-top: 25px;
+}
+
+.github-link {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  border: 1px solid var(--text-primary);
+
+  color: var(--text-primary);
+  background: transparent;
+
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.github-link:hover {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .github-section {
+    padding: 70px 0;
+  }
+
+  .github-calendar-wrapper {
+    padding: 20px;
+  }
+
+  .github-calendar-wrapper > div {
+    min-width: 650px;
+  }
+
+}

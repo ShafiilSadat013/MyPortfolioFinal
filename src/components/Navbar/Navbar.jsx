@@ -57,8 +57,9 @@ export default function Navbar({ isDarkMode, toggleTheme, onOpenHireModal, onOpe
           <a href="#about" onClick={closeMenu}><span className="nav-num font-mono">02</span> About</a>
           <a href="#education" onClick={closeMenu}><span className="nav-num font-mono">03</span> Education</a>
           <a href="#skills" onClick={closeMenu}><span className="nav-num font-mono">04</span> Skills</a>
-          <a href="#projects" onClick={closeMenu}><span className="nav-num font-mono">05</span> Projects</a>
-          <a href="#contact" onClick={closeMenu}><span className="nav-num font-mono">06</span> Contact</a>
+          <a href="#github" onClick={closeMenu}><span className="nav-num font-mono">05</span> Github Contribution</a>
+          <a href="#projects" onClick={closeMenu}><span className="nav-num font-mono">06</span> Projects</a>
+          <a href="#contact" onClick={closeMenu}><span className="nav-num font-mono">07</span> Contact</a>
         </nav>
 
         {/* <div className="drawer-footer">
