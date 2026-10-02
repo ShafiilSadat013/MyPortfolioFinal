@@ -26,6 +26,11 @@
   color: var(--btn-primary-text);
 } */
 
+.section-header .section-title #yellow{
+  background-color: yellow;
+  padding: 3px;
+  border: 2px solid black; 
+}
 
 /* total skills */
 .skills-grid {

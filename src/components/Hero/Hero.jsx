@@ -33,11 +33,6 @@ export default function Hero({ onOpenHireModal}) {
           <a href="#projects" className="btn btn-outline">
             Explore Projects
           </a>
-          
-          {/* cv button */}
-          <button className="btn btn-outline" onClick={triggerCV}>
-            {downloadMsg ? 'CV Downloaded ✓' : 'Download CV'}
-          </button>
         </div>
 
         <div className="hero-info">

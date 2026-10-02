@@ -12,9 +12,9 @@
   --text-secondary: #3f3f46;
   --text-muted: #71717a;
 
-  --btn-primary-bg: #000000;
-  --btn-primary-text: #ffffff;
-  --btn-outline-bg: #ffffff;
+  --btn-primary-bg: yellow;
+  --btn-primary-text: black;
+  --btn-outline-bg: yellow;
   --btn-outline-text: #000000;
   --btn-outline-border: #000000;
 
@@ -35,11 +35,11 @@
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
 
-  --btn-primary-bg: #ffffff;
+  --btn-primary-bg: yellow;
   --btn-primary-text: #000000;
-  --btn-outline-bg: #121215;
-  --btn-outline-text: #ffffff;
-  --btn-outline-border: #ffffff;
+  --btn-outline-bg: yellow;
+  --btn-outline-text: black;
+  --btn-outline-border: black;
 
   --dot-color: rgba(255, 255, 255, 0.12);
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.4);
@@ -58,10 +58,10 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: var(--bg-primary);
+  background-color: white;
   color: var(--text-primary);
   line-height: 1.6;
-  background-image: radial-gradient(var(--dot-color) 1.2px, transparent 1.2px);
+  /* background-image: radial-gradient(var(--dot-color) 1.2px, transparent 1.2px); */
   background-size: 26px 26px;
   background-attachment: fixed;
   transition: background-color 0.22s ease, color 0.22s ease;
@@ -76,4 +76,22 @@ body {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+
+.section-header #yellow{
+  background-color: yellow;
+  padding: 3px;
+  border: 2px solid black; 
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer-title #yellow{
+  background-color: yellow;
+  padding: 3px;
+  border: 2px solid black; 
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  font-weight: 600;
 }

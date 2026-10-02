@@ -7,7 +7,7 @@ export default function Education() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag font-mono">03 // Academic Trajectory</span>
-          <h2 className="section-title">Education</h2>
+          <h2 className="section-title"><span id='yellow'>Education</span></h2>
         </div>
 
         <div className="edu-time font-mono">

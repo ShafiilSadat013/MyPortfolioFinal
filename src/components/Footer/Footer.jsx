@@ -23,7 +23,7 @@ export default function Footer({ onOpenHireModal }) {
           
           <div className="footer-left">
             <span className="section-tag font-mono">05 // Inquiries</span>
-            <h2 className="footer-title">Let&apos;s build something resilient.</h2>
+            <h2 className="footer-title"><span id='yellow'>Let&apos;s build something resilient.</span></h2>
             <p className="footer-intro">
               Looking for a dedicated 3rd year CSE intern, or need a full-stack web application 
               delivered cleanly and promptly? Send a transmission or ping me directly.

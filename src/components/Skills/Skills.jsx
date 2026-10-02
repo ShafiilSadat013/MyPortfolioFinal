@@ -37,7 +37,7 @@ export default function Skills() {
 
         <div className="section-header">
           <span className="section-tag font-mono">03 // Capabilities</span>
-          <h2 className="section-title">Technical Skills</h2>
+          <h2 className="section-title"><span id='yellow'>Technical Skills</span></h2>
         </div>
 
         {/* <div className="filter-row">

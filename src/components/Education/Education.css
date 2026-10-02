@@ -19,6 +19,12 @@
   margin-bottom: 1rem;
 }
 
+.section-header .section-title #yellow{
+  background-color: yellow;
+  padding: 3px;
+  border: 2px solid black; 
+}
+
 /* total class of edu card */
 .edu-time {
   display: flex;

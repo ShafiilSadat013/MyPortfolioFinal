@@ -8,7 +8,7 @@ export default function About() {
 
         <div className="section-header">
           <div className="section-tag font-mono">02 // Background</div>
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title"><span id='yellow'>About Me</span></h2>
         </div>
 
         <div className="about-grid">

@@ -16,6 +16,13 @@
   margin-bottom: 1rem;
 }
 
+
+.section-header .section-title #yellow{
+  background-color: yellow;
+  padding: 3px;
+  border: 2px solid black; 
+}
+
 /* the paragraph after about me */
 .about-story {
   margin-top: 5px;
@@ -73,15 +80,15 @@
 
 /* information card of about */
 .info-card {
-  background-color: var(--bg-card);
-  border: 2px solid var(--border-color);
+  background-color: yellow;
+  border: 3px solid var(--border-color);
   padding: 1.6rem;
   transition: all 0.2s ease;
 }
 
 /* info cards float when clicked */
 .info-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
 

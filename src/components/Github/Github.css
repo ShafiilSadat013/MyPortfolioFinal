@@ -3,7 +3,7 @@
 .github-section {
   padding: 100px 0;
   border-top: 1px solid var(--border-color);
-  background: var(--bg-primary);
+  background: transparent;
 }
 
 .github-description {
@@ -11,6 +11,16 @@
   color: var(--text-secondary);
   font-size: 15px;
 }
+
+/* .section-header #yellow{
+  background-color: yellow;
+  padding: 3px;
+  border: 2px solid black; 
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 17px;
+  font-weight: 600;
+} */
+
 
 /* Calendar */
 
@@ -38,14 +48,10 @@
 
 .github-link {
   display: inline-block;
-
-  padding: 12px 20px;
-
-  border: 1px solid var(--text-primary);
-
-  color: var(--text-primary);
-  background: transparent;
-
+  padding: 8px;
+  border: 2px solid black;
+  color: black;
+  background-color: yellow;
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
   font-weight: 600;
@@ -58,8 +64,10 @@
 }
 
 .github-link:hover {
-  background: var(--text-primary);
-  color: var(--bg-primary);
+  background: yellow;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: black;
 }
 
 /* =========================================

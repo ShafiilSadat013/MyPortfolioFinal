@@ -13,7 +13,7 @@ function Github() {
             05 // GitHub Activity
           </span>
 
-          <h2>GitHub Contributions</h2>
+          <h2><span id='yellow'>Github Contributions</span></h2>
 
           <p className="github-description">
             A snapshot of my coding activity and contributions.
