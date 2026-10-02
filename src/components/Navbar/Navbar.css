@@ -39,30 +39,14 @@
 }
 
 
-/* darkmode and burger icon */
+/* burger icon */
 .nav-controls {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.theme-btn {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
-  font-weight: 700;
-  background: transparent;
-  color: var(--text-primary);
-  border: 1.5px solid var(--border-color);
-  padding: 0.5rem 0.85rem;
-  cursor: pointer;
-  letter-spacing: 0.05em;
-  transition: all 0.2s ease;
-}
 
-.theme-btn:hover {
-  background: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
-}
 
 .hamburger-btn {
   background: transparent;

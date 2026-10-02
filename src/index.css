@@ -23,30 +23,7 @@
   --shadow-md: 4px 4px 0px #000000;
 }
 
-[data-theme='dark'] {
-  /* DARK THEME (Pure Obsidian & High-Contrast White) */
-  --bg-primary: #09090b;
-  --bg-card: #121215;
-  --bg-subtle: #18181b;
-  --border-color: black;
-  --border-subtle: rgb(216, 213, 213);
 
-  --text-primary: white;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
-
-  --btn-primary-bg: yellow;
-  --btn-primary-text: #000000;
-  --btn-outline-bg: yellow;
-  --btn-outline-text: black;
-  --btn-outline-border: black;
-
-  --dot-color: rgba(255, 255, 255, 0.12);
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.4);
-  --shadow-md: 4px 4px 0px #ffffff;
-  
-  
-}
 
 * {
   margin: 0;

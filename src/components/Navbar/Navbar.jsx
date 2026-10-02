@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
-export default function Navbar({ isDarkMode, toggleTheme, onOpenHireModal, onOpenCodeExplorer }) {
+export default function Navbar({ onOpenHireModal }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,15 +22,6 @@ export default function Navbar({ isDarkMode, toggleTheme, onOpenHireModal, onOpe
           </a>
 
           <div className="nav-controls">
-            {/* dark mode button here */}
-            <button 
-              className="theme-btn font-mono" 
-              onClick={toggleTheme}
-              title="Toggle Black / White Mode"
-            >
-              {isDarkMode ? '☼ LIGHT' : '☾ DARK'}
-            </button>  
-
             {/* for hamburger icon */}
             <button className={`hamburger-btn ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}
             >
