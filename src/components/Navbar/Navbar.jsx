@@ -23,13 +23,13 @@ export default function Navbar({ isDarkMode, toggleTheme, onOpenHireModal, onOpe
 
           <div className="nav-controls">
             {/* dark mode button here */}
-            {/* <button 
+            <button 
               className="theme-btn font-mono" 
               onClick={toggleTheme}
               title="Toggle Black / White Mode"
             >
               {isDarkMode ? '☼ LIGHT' : '☾ DARK'}
-            </button>   */}
+            </button>  
 
             {/* for hamburger icon */}
             <button className={`hamburger-btn ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}

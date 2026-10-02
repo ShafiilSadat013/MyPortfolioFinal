@@ -98,6 +98,7 @@
   text-transform: uppercase;
   color: var(--text-muted);
   letter-spacing: 0.1em;
+  color: black;
 }
 
 .info-card h4 {
@@ -105,11 +106,12 @@
   font-weight: 700;
   color: var(--text-primary);
   margin: 0.35rem 0;
+  color: black;
 }
 
 .info-card p {
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: black;
 }
 
 @media (max-width: 860px) {

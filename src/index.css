@@ -28,10 +28,10 @@
   --bg-primary: #09090b;
   --bg-card: #121215;
   --bg-subtle: #18181b;
-  --border-color: #ffffff;
+  --border-color: black;
   --border-subtle: rgb(216, 213, 213);
 
-  --text-primary: #ffffff;
+  --text-primary: white;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
 
@@ -44,6 +44,8 @@
   --dot-color: rgba(255, 255, 255, 0.12);
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.4);
   --shadow-md: 4px 4px 0px #ffffff;
+  
+  
 }
 
 * {
@@ -58,7 +60,7 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: white;
+  background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
   /* background-image: radial-gradient(var(--dot-color) 1.2px, transparent 1.2px); */
@@ -81,6 +83,7 @@ body {
 
 .section-header #yellow{
   background-color: yellow;
+  color: black;
   padding: 3px;
   border: 2px solid black; 
   font-family: 'JetBrains Mono', monospace;
