@@ -36,21 +36,9 @@ export default function Skills() {
       <div className="container">
 
         <div className="section-header">
-          <span className="section-tag font-mono">03 // Capabilities</span>
+          <span className="font-mono">03 // Capabilities</span>
           <h2 className="section-title"><span id='yellow'>Technical Skills</span></h2>
         </div>
-
-        {/* <div className="filter-row">
-          {["ALL", "Languages", "Frontend", "Backend", "Tools"].map((tab) => (
-            <button
-              key={tab}
-              className={`filter-tab font-mono ${activeFilter === tab ? 'active' : ''}`}
-              onClick={() => setActiveFilter(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div> */}
 
         <div className="skills-grid">
           {filtered.map((cat, idx) => (

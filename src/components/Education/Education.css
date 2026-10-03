@@ -1,6 +1,6 @@
 .edu-sec {
   margin-top: 10px;
-  border-top: 1.5px solid var(--border-subtle);
+  border-top: 1.5px solid black;
 }
 
 .section-header {
@@ -46,8 +46,8 @@
 
 /* EDU CARDS float when clicked */
 .edu-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-box);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
 /* the highlight which institute i am in rn */
@@ -102,7 +102,9 @@
   white-space: nowrap;
 }
 
-.edu-stat.highlight {
+/* yellow running button */
+.edu-stat.highlight 
+{
   background-color: var(--btn-primary-bg);
   color: var(--btn-primary-text);
 }
@@ -113,7 +115,8 @@
   color: var(--text-primary);
 }
 /* for nstu part, dropped out */
-.edu-stat.discontinued {
+.edu-stat.disc 
+{
   border-style: dashed;
   font-size: 1rem;
   padding: 4px;

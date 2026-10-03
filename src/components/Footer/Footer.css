@@ -3,7 +3,7 @@
 .site-footer {
   margin-top: 10px;
   border-top: 2px solid var(--border-color);
-  background-color: var(--bg-card);
+  /* background-color: var(--bg-card); */
   padding: 6rem 0 3rem;
 }
 
@@ -196,6 +196,7 @@
   transform: translateY(-2px);
 }
 
+/* copyright part on the right */
 .cpr {
   font-size: 0.75rem;
   color: var(--text-muted);

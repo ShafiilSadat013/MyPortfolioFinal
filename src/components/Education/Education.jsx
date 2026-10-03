@@ -40,7 +40,7 @@ export default function Education() {
               <div className="edu-note">Dropped Out due to health issues</div>
             </div>
             <div>
-              <span className="edu-stat discontinued">DROP OUT</span>
+              <span className="edu-stat disc">DROP OUT</span>
             </div>
           </div>
 

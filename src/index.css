@@ -18,7 +18,7 @@
   --btn-outline-text: #000000;
   --btn-outline-border: #000000;
 
-  --dot-color: rgba(0, 0, 0, 0.12);
+  --dot-color: rgb(184, 184, 184);
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
   --shadow-md: 4px 4px 0px #000000;
 }
@@ -37,10 +37,10 @@ html {
 
 body {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: var(--bg-primary);
+  background-color: white;
   color: var(--text-primary);
   line-height: 1.6;
-  /* background-image: radial-gradient(var(--dot-color) 1.2px, transparent 1.2px); */
+  background-image: radial-gradient(var(--dot-color) 1.2px, transparent 1.2px); 
   background-size: 26px 26px;
   background-attachment: fixed;
   transition: background-color 0.22s ease, color 0.22s ease;

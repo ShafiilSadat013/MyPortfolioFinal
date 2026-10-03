@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import './Hero.css';
 
-export default function Hero({ onOpenHireModal}) {
-  const [downloadMsg, setDownloadMsg] = useState(false);
-
-  const triggerCV = () => 
-  {
-    setDownloadMsg(true);
-    setTimeout(() => setDownloadMsg(false), 3000);
-  };
+export default function Hero() {
 
   return (
     <section id="intro" className="hero-section">
@@ -20,17 +13,16 @@ export default function Hero({ onOpenHireModal}) {
           Hi, I am <span className="uline">Sadat</span>
         </h1>
 
-        <p className="hero-description">
-          Computer Science & Engineering undergraduate focusing on research, 
-          data structures & algorithms, and Human Computer Interaction
+        <p className="hero-desc">
+          Third Year Computer Science & Engineering undergraduate focusing on research and
+          Academics
         </p>
 
-        {/* Action Buttons: Solid black text ensured in Light Mode */}
         <div className="hero-buttons">
-          <button className="btn btn-primary" onClick={onOpenHireModal}>
+          <button className="btn btn-prim">
             Hire Me
           </button>
-          <a href="#projects" className="btn btn-outline">
+          <a href="#projects" className="btn btn-two">
             Explore Projects
           </a>
         </div>
@@ -47,14 +39,14 @@ export default function Hero({ onOpenHireModal}) {
           </div>
           <div className="info-divider"></div>
           <div className="info-box">
-            <span className="info-num">3</span>
+            <span className="info-num">4</span>
             <span className="info-text font-mono">PROJECTS Done</span>
           </div>
           <div className="info-divider"></div>
-          {/* <div className="info-box">
-            <span className="info-num">100%</span>
-            <span className="info-text font-mono">B&W Architecture</span>
-          </div> */}
+          <div className="info-box">
+            <span className="info-num">200+</span>
+            <span className="info-text font-mono">Books Read</span>
+          </div> 
         </div>
 
       </div>

@@ -26,7 +26,7 @@ export default function About() {
             <div className="curriculum-box">
               <span className="curriculum-head font-mono">CORE COURSEWORK:</span>
               <div className="curriculum-tags font-mono">
-                <span>[Data Structures &amp; Algorithms]</span>
+                <span>[Data Structures & Algorithms]</span>
                 <span>[Database Management Systems]</span>
                 <span>[Object Oriented Programming]</span>
                 <span>[Computer Networks]</span>

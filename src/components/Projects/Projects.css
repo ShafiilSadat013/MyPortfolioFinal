@@ -122,17 +122,19 @@
 }
 
 
+/* soruce code hover */
 .proj-btn-border:hover 
 {
-  background-color: var(--btn-primary-bg) !important;
-  color: var(--btn-primary-text) !important;
-  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: black;
 }
+/* preview hover */
 .proj-btn-fill:hover 
 {
-  background-color: var(--btn-primary-bg) !important;
-  color: var(--btn-primary-text) !important;
-  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: black;
 }
 
 @media (max-width: 800px) {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
-export default function Navbar({ onOpenHireModal }) {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -53,15 +53,7 @@ export default function Navbar({ onOpenHireModal }) {
           <a href="#contact" onClick={closeMenu}><span className="nav-num font-mono">07</span> Contact</a>
         </nav>
 
-        {/* <div className="drawer-footer">
-          <button className="drawer-hire-btn" onClick={() => { closeMenu(); onOpenHireModal(); }}>
-            Hire Me &rarr;
-          </button>
-          <div className="drawer-sub font-mono">
-            <span>CSE Undergrad '26</span>
-            <span>Sylhet, BD</span>
-          </div>
-        </div> */}
+        
       </div>
     </>
   );

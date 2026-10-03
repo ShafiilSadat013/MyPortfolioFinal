@@ -5,15 +5,6 @@ export default function Footer({ onOpenHireModal }) {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [sent, setSent] = useState(false);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (!formData.name || !formData.email || !formData.message) return;
-  //   setSent(true);
-  //   setTimeout(() => {
-  //     setSent(false);
-  //     setFormData({ name: '', email: '', subject: '', message: '' });
-  //   }, 4000);
-  // };
   // get actual mesage on email
   const handleSubmit = async (e) => {
   e.preventDefault();
