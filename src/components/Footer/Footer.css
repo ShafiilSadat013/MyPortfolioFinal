@@ -1,3 +1,5 @@
+
+/* settings for entire footer */
 .site-footer {
   margin-top: 10px;
   border-top: 2px solid var(--border-color);
@@ -5,6 +7,7 @@
   padding: 6rem 0 3rem;
 }
 
+/* the grid of footer, the infos and the form */
 .footer-grid 
 {
   display: grid;
@@ -13,15 +16,18 @@
   margin-bottom: 5rem;
 }
 
+/* title's settings, let's build something resilient */
 .footer-title {
-  font-size: 2.4rem;
+  /* font-size: 2.4rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--text-primary); */
   line-height: 1.15;
+  margin-top: 15px;
   letter-spacing: -0.03em;
   margin-bottom: 1.25rem;
 }
 
+/* the paragraph of the footer */
 .footer-intro {
   font-size: 1.05rem;
   color: var(--text-secondary);
@@ -29,6 +35,7 @@
   margin-bottom: 2rem;
 }
 
+/* the info list of left footer */
 .footer-contact-list {
   display: flex;
   flex-direction: column;
@@ -39,18 +46,22 @@
   margin-bottom: 2.25rem;
 }
 
+
+/* email,location,academic  */
 .footer-contact-list .label {
   color: var(--text-muted);
   display: inline-block;
   width: 120px;
 }
 
+/* values like mail id,location and academic status */
 .footer-contact-list .val {
   color: var(--text-primary);
   font-weight: 700;
   text-decoration: none;
 }
 
+/* the hire button under the left footer */
 .footer-hire-btn {
   background: var(--btn-primary-bg);
   color: var(--btn-primary-text);
@@ -62,43 +73,51 @@
   transition: all 0.2s ease;
 }
 
+/* hire button floats when clicked */
 .footer-hire-btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
-.footer-form-panel {
+
+/* the form on the right side */
+.footer-form {
   background: var(--bg-primary);
-  border: 2px solid var(--border-color);
+  border: 2px solid black;
   padding: 2.2rem;
 }
 
-.form-legend {
+/* transmit here part */
+.form-title {
   font-size: 0.8rem;
   color: var(--text-muted);
   letter-spacing: 0.1em;
   margin-bottom: 1.5rem;
 }
 
-.form-wrapper {
+/* entire form settings */
+.form-wrapper 
+{
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.field {
+/* individual boxes inside the boxes */
+.field 
+{
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
-
+/* box titles */
 .field label {
   font-size: 0.75rem;
   color: var(--text-primary);
   font-weight: 700;
   text-transform: uppercase;
 }
-
+/* when giving input in the form */
 .field input, .field textarea {
   width: 100%;
   background: var(--bg-card);
@@ -138,6 +157,8 @@
   font-size: 0.9rem;
 }
 
+/* socials  */
+/* base for the entire footer */
 .footer-base {
   display: flex;
   justify-content: space-between;
@@ -148,13 +169,16 @@
   gap: 1.5rem;
 }
 
+/* the links class */
 .social-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-.social-badge {
+/* writings of the links */
+.social-title
+ {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 700;
@@ -165,13 +189,14 @@
   transition: all 0.2s ease;
 }
 
+/* floats when clicked */
 .social-badge:hover {
   background: var(--btn-primary-bg);
   color: var(--btn-primary-text);
   transform: translateY(-2px);
 }
 
-.copyright {
+.cpr {
   font-size: 0.75rem;
   color: var(--text-muted);
   display: flex;
