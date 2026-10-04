@@ -53,7 +53,7 @@ export default function Footer({ onOpenHireModal }) {
         <div className="footer-grid">
           
           <div className="footer-left">
-            <span className="section-tag font-mono">05 // Inquiries</span>
+            <span className="section-tag font-mono">07 // Inquiries</span>
             <h2 className="footer-title"><span id='yellow'>Let&apos;s build something resilient.</span></h2>
             <p className="footer-intro">
               Looking for a dedicated research partner from CSE 3rd year or want to learn

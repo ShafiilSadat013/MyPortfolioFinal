@@ -42,7 +42,7 @@ export default function Projects() {
       <div className="container">
 
         <div className="section-header">
-          <span className="section-tag font-mono">04 // Portfolio</span>
+          <span className="section-tag font-mono">06 // Portfolio</span>
           <h2 className="section-title"><span id='yellow'>Projects</span></h2>
         </div>
 
