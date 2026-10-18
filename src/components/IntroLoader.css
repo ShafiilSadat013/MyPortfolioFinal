@@ -109,8 +109,21 @@
 .intro-loader__footer { padding-top: 20px; border-top: 1px solid #ddd; color: #777; font-size: 9px; }
 .intro-loader__skip { border: 0; padding: 6px; background: transparent; color: #111; font: inherit; font-weight: 800; cursor: pointer; }
 
-.portfolio-app--intro-hidden { opacity: 0; transform: scale(.975); transform-origin: center top; }
-.portfolio-app--intro-visible { opacity: 1; transform: scale(1); transition: opacity 550ms ease, transform 650ms cubic-bezier(.2,.75,.25,1); }
+
+.portfolio-app--intro-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portfolio-app--intro-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 550ms ease;
+}
+
+
+/* .portfolio-app--intro-hidden { opacity: 0; transform: scale(.975); transform-origin: center top; }
+.portfolio-app--intro-visible { opacity: 1; transform: scale(1); transition: opacity 550ms ease, transform 650ms cubic-bezier(.2,.75,.25,1); } */
 
 @keyframes introBlink { to { visibility: hidden; } }
 

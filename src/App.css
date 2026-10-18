@@ -2,4 +2,18 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  overflow-x: clip;
+}
+
+.portfolio-app--intro-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: none;
+}
+
+.portfolio-app--intro-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
 }
