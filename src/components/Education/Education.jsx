@@ -15,7 +15,7 @@ export default function Education() {
           {/* MU */}
           <div className="edu-card running">
             <div>
-              <div className="edu-level">B.Sc. in CSE</div>
+              <div className="edu-level">B.Sc in CSE</div>
               <div className="edu-period">2024 – Present</div>
             </div>
             <div>
@@ -31,16 +31,16 @@ export default function Education() {
           {/* NSTU */}
           <div className="edu-card">
             <div>
-              <div className="edu-level">B.Sc. in ICE</div>
+              <div className="edu-level">B.Sc in ICE</div>
               <div className="edu-period">2022-2023</div>
             </div>
             <div>
               <h3 className="edu-inst">Noakhali Science and Technology University (NSTU)</h3>
-              <div className="edu-degree">Information and Communication Engineering (ICE)</div>
+              <div className="edu-degree">B.Sc(Eng) Information and Communication Engineering (ICE)</div>
               <div className="edu-note">Dropped Out due to health issues</div>
             </div>
             <div>
-              <span className="edu-stat disc">DROP OUT</span>
+              <span className="edu-stat discee">DROP OUT</span>
             </div>
           </div>
 

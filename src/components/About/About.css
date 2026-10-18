@@ -79,7 +79,8 @@
 }
 
 /* information card of about */
-.info-card {
+.info-card 
+{
   background-color: yellow;
   border: 3px solid var(--border-color);
   padding: 1.6rem;
@@ -101,7 +102,8 @@
   color: black;
 }
 
-.info-card h4 {
+.info-card h4 
+{
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-primary);

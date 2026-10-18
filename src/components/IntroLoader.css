@@ -1,0 +1,129 @@
+
+.intro-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 24px;
+  background: whitesmoke;
+  color: #111;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: center;
+  transition: opacity 650ms ease, transform 650ms cubic-bezier(.2,.75,.25,1);
+}
+
+.intro-loader::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  opacity: .24;
+  background-image: linear-gradient(rgba(0, 0, 0, .035) 1px, transparent 1px);
+  background-size: 100% 4px;
+}
+
+.intro-loader--exit {
+  opacity: 0;
+  transform: scale(1.18);
+  pointer-events: none;
+}
+
+.intro-loader__content {
+  position: relative;
+  width: min(100%, 760px);
+  min-height: min(580px, calc(100vh - 48px));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #111;
+  padding: clamp(18px, 4vw, 34px);
+  box-shadow: 8px 8px 0 #111;
+  background: #fff;
+}
+
+.intro-loader__topline,
+.intro-loader__footer,
+.intro-loader__progress-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.intro-loader__pixel { color: #e4bd00; font-size: 17px; }
+.intro-loader__version { color: #777; text-align: right; }
+.intro-loader__main { width: 100%; max-width: 550px; margin: 48px auto; }
+.intro-loader__eyebrow { margin-bottom: 18px; font-size: 11px; font-weight: 700; letter-spacing: .1em; }
+
+.intro-loader__title {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: clamp(42px, 9vw, 82px);
+  line-height: .98;
+  letter-spacing: -.075em;
+  font-weight: 800;
+}
+
+.intro-loader__title span {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 0 .12em .06em;
+  background: #ffe44d;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.intro-loader__description { min-height: 24px; margin-top: 22px; color: #555; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; }
+.intro-loader__progress-wrap { margin-top: 34px; }
+.intro-loader__progress-label { margin-bottom: 9px; font-size: 10px; }
+.intro-loader__progress-label span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.intro-loader__progress-track { height: 18px; border: 2px solid #111; padding: 2px; background: #fff; }
+.intro-loader__progress-fill { height: 100%; background: #ffe44d; transition: width 90ms linear; }
+
+.intro-loader__start {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 15px 18px;
+  border: 2px solid #111;
+  background: #ffe44d;
+  color: #111;
+  box-shadow: 4px 4px 0 #111;
+  font: 800 12px 'JetBrains Mono', 'Courier New', monospace;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.intro-loader__start:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #111; background: #ffdc24; }
+.intro-loader__start:focus-visible, .intro-loader__skip:focus-visible { outline: 3px dashed #111; outline-offset: 5px; }
+.intro-loader__loading-note { display: flex; align-items: center; gap: 9px; margin-top: 28px; font-size: 10px; font-weight: 700; }
+.intro-loader__blink { animation: introBlink .8s steps(2, start) infinite; }
+.intro-loader__footer { padding-top: 20px; border-top: 1px solid #ddd; color: #777; font-size: 9px; }
+.intro-loader__skip { border: 0; padding: 6px; background: transparent; color: #111; font: inherit; font-weight: 800; cursor: pointer; }
+
+.portfolio-app--intro-hidden { opacity: 0; transform: scale(.975); transform-origin: center top; }
+.portfolio-app--intro-visible { opacity: 1; transform: scale(1); transition: opacity 550ms ease, transform 650ms cubic-bezier(.2,.75,.25,1); }
+
+@keyframes introBlink { to { visibility: hidden; } }
+
+@media (max-width: 520px) {
+  .intro-loader { padding: 14px; }
+  .intro-loader__content { min-height: calc(100svh - 28px); padding: 18px; box-shadow: 5px 5px 0 #111; }
+  .intro-loader__main { margin: 35px auto; }
+  .intro-loader__topline, .intro-loader__footer { font-size: 9px; }
+  .intro-loader__footer span:last-child { display: none; }
+  .intro-loader__description { font-size: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-loader, .portfolio-app--intro-visible, .intro-loader__progress-fill { transition-duration: 1ms; }
+  .intro-loader__blink { animation: none; }
+}

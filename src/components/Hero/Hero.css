@@ -24,9 +24,7 @@
 
 /* uunderline of sadat */
 .uline {
-  /* text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 8px; */
+
   background-color: yellow;
 }
 
@@ -82,14 +80,14 @@
 /* for explore*/
 .btn-two
 {
-  background-color: var(--btn-outline-bg) !important;
-  color: var(--btn-outline-text) !important;
-  border: 2px solid var(--btn-outline-border) !important;
+  background-color: var(--btn-outline-bg) ;
+  color: var(--btn-outline-text) ;
+  border: 2px solid var(--btn-outline-border);
 }
 
 .btn-two:hover {
-  background-color: var(--btn-primary-bg) !important;
-  color: var(--btn-primary-text) !important;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }

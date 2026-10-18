@@ -25,9 +25,9 @@ export default function Navbar() {
             {/* for hamburger icon */}
             <button className={`hamburger-btn ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}
             >
-              <span className="hBar bar1"></span>
-              <span className="hBar bar2"></span>
-              <span className="hBar bar3"></span>
+              <span className="hBar"></span>
+              <span className="hBar"></span>
+              <span className="hBar"></span>
             </button>
           </div>
         </div>

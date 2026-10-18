@@ -125,7 +125,7 @@ export default function Footer({ onOpenHireModal }) {
                   <input
                     id="subject"
                     type="text"
-                    placeholder="Internship / Full Stack Contract"
+                    placeholder="Type your message here"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   />

@@ -7,7 +7,6 @@ export default function Hero() {
     <section id="intro" className="hero-section">
       <div className="container hero-container">
         
-        {/* <div className="hero-tag font-mono">Year 3, Semester 3 Undergrad</div> */}
 
         <h1 className="hero-title">
           Hi, I am <span className="uline">Sadat</span>
